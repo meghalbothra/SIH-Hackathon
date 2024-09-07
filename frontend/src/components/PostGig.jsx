@@ -10,29 +10,29 @@ const PostGig = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
-      <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">Post a Gig</h1>
-        <p className="text-xl">Find the perfect worker for your job</p>
-      </header>
+        <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
+        <header className="text-center mb-8">
+            <h1 className="text-4xl font-bold mb-2">Post a Gig</h1>
+            <p className="text-xl">Find the perfect worker for your job</p>
+        </header>
 
-      <main className="w-full max-w-2xl bg-white rounded-lg shadow-md p-6">
-  <div className="flex justify-center mb-6">
-    <button
-      className={`mr-2 px-4 py-2 rounded-md ${isSkilled ? 'bg-yellow-500 text-white' : 'bg-black text-white'}`}
-      onClick={() => setIsSkilled(true)}
-    >
-      <Briefcase className="inline-block mr-2" />
-      Skilled Job
-    </button>
-    <button
-      className={`ml-2 px-4 py-2 rounded-md ${!isSkilled ? 'bg-yellow-500 text-white' : 'bg-black text-white'}`}
-      onClick={() => setIsSkilled(false)}
-    >
-      <DollarSign className="inline-block mr-2" />
-      Unskilled Job
-    </button>
-  </div>
+        <main className="w-full max-w-2xl bg-white rounded-lg shadow-md p-6">
+            <div className="flex justify-center mb-6">
+                <button
+                className={`mr-2 px-4 py-2 rounded-md ${isSkilled ? 'bg-yellow-500 text-white' : 'bg-black text-white'}`}
+                onClick={() => setIsSkilled(true)}
+                >
+                <Briefcase className="inline-block mr-2" />
+                Skilled Job
+                </button>
+                <button
+                className={`ml-2 px-4 py-2 rounded-md ${!isSkilled ? 'bg-yellow-500 text-white' : 'bg-black text-white'}`}
+                onClick={() => setIsSkilled(false)}
+                >
+                <DollarSign className="inline-block mr-2" />
+                Unskilled Job
+                </button>
+            </div>
 
 
 
